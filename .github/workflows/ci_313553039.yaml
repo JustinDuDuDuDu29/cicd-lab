@@ -33,6 +33,7 @@ jobs:
         run: npm run format:check
 
       - name: Test
+        if: always()
         run: npx vitest run --reporter=verbose --reporter=junit --outputFile.junit=test-results/junit.xml
 
       - name: Publish test results
