@@ -30,6 +30,9 @@ jobs:
       - name: TypeScript typecheck
         run: npm run typecheck
 
+      - name: Register Prettier problem matcher
+        run: echo "::add-matcher::.github/prettier-matcher.json"
+
       - name: Prettier check
         run: npm run format:check
 

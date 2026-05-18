@@ -1,0 +1,13 @@
+{
+  "problemMatcher": [
+    {
+      "owner": "prettier",
+      "pattern": [
+        {
+          "regexp": "^\\[warn\\] (.+)$",
+          "file": 1
+        }
+      ]
+    }
+  ]
+}
