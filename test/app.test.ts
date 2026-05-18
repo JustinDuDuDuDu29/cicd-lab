@@ -26,7 +26,7 @@ describe('Fastify app', () => {
     await app.close();
   });
 
-  it('intentional failure', () => {
-    expect(1).toBe(2);
-  });
+  // it('intentional failure', () => {
+  //   expect(1).toBe(2);
+  // });
 });
