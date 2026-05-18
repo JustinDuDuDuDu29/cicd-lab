@@ -4,8 +4,9 @@
       "owner": "prettier",
       "pattern": [
         {
-          "regexp": "^\\[warn\\] (.+)$",
-          "file": 1
+          "regexp": "^(\\[warn\\]) (.+)$",
+          "message": 1,
+          "file": 2
         }
       ]
     }
