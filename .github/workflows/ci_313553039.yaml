@@ -34,8 +34,8 @@ jobs:
         uses: EPMatt/reviewdog-action-prettier@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-pr-review
-          fail_on_error: true
+          reporter: github-check
+          fail_level: error
 
       - name: Test
         if: always()
