@@ -26,7 +26,8 @@ describe('Fastify app', () => {
     await app.close();
   });
 
-  // it('intentional failure', () => {
-  //   expect(1).toBe(2);
-  // });
+  it('intentional type error', () => {
+    const x: number = 'not a number';
+    expect(x).toBe(42);
+  });
 });
