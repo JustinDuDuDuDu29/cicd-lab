@@ -25,4 +25,8 @@ describe('Fastify app', () => {
     expect(response.json().message).toBe('CI/CD Lab Fastify app is running');
     await app.close();
   });
+
+  it('intentional failure', () => {
+    expect(1).toBe(2);
+  });
 });
