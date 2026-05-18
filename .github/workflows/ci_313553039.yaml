@@ -36,6 +36,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-check
           fail_level: error
+          filter_mode: nofilter
 
       - name: Test
         if: always()
