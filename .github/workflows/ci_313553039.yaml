@@ -31,12 +31,7 @@ jobs:
         run: npm run typecheck
 
       - name: Prettier check
-        uses: EPMatt/reviewdog-action-prettier@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-check
-          fail_level: error
-          filter_mode: nofilter
+        run: npm run format:check
 
       - name: Test
         if: always()
